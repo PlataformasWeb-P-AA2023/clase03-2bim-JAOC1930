@@ -1,5 +1,6 @@
 from django.forms import ModelForm
 from administrativo.models import Estudiante
+from administrativo.models import NumeroTelefonico
 
 
 class EstudianteForm(ModelForm): 

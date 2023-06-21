@@ -13,6 +13,19 @@
   </li>
 
 {% endfor %} 
+
+<p>Numeros telefono</p>
+
+{% for n in numero %}
+
+<li>
+  {{n}} - [<a href="{% url 'eliminar_numero' n.id %}" 
+    onclick="return confirm('¿Está seguro de la eliminación?')" >
+    eliminar</a>]
+</li>
+
+{% endfor %} 
+
 </ul>
 
 <br />
